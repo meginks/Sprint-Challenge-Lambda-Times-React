@@ -20,10 +20,10 @@ const Tabs = props => {
 // Make sure to use PropTypes to validate your types! 
 
 Tabs.propTypes = {
-  tabs: PropTypes.arrayOf({
-    tabs: PropTypes.string,
-    selectedTab: PropTypes.string
-  })
+  tabs: PropTypes.arrayOf(PropTypes.oneOfType([
+    PropTypes.string,
+    PropTypes.object
+  ]))
 }
 
 export default Tabs;
