@@ -1,7 +1,11 @@
 import React from 'react';
-
+// import Styled from 'styled-components'; 
 // Refactor this component to use styled components and not classNames. 
 // You can find the corresponding CSS in the CSS/index.css file
+
+// const TopBarDiv = styled.div``; 
+
+
 
 const TopBar = () => {
   return (
