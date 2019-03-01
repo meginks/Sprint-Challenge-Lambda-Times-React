@@ -23,8 +23,8 @@ const Tab = props => {
 // Make sure you include PropTypes on your props. 
 
 Tab.propTypes = {
-  tab: PropTypes.arrayOf({
-    tab: PropTypes.string
+  tab: PropTypes.shape({
+  tab: PropTypes.string
   })
 }
 
