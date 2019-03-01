@@ -28,10 +28,28 @@ Look through the application code. If you have the old Lambda Times (Applied Jav
 
 ## Self-Study/Essay Questions
 
-- [ ] What are PropTypes used for? Please describe why it's important to type check our data in JavaScript.
+- [ ] What are PropTypes used for? Please describe why it's important to type check our data in JavaScript. 
+
+PropTypes are used to declare that a variable has a certain type. Javascript is a dynamically-typed language, which means that the type of a variable can change. PropTypes allows you to control the type of variable so that you don't end up with unexpected results in your code.
+
+
 - [ ] Describe a life-cycle event in React?
+
+A life-cycle event in React has three phases: Phase 1: Mounting -- In this phase, the component is first put on the DOM. Phase 2: Updating -- In this phase, the component waits for one of three things to happen: new props, setState() or forceUpdate(). This is where the component mutates or changes based on user input (which changes the state or props when a setState function is triggered). Phase 3: Unmounting -- In this phase, event listeners and components that are mounted to the DOM and are no longer needed (dependent on state) unmount. This is essentially the "clean up" phase.
+
 - [ ] Explain the details of a Higher Order Component?
-- [ ] What are three different ways to style components in React? Explain some of the benefits of each.
+
+Higher Order Components allow you to share functionality between multiple components and conditionally render protected content to the screen. A higher order component is essentially a higher order function (a component is a function), but instead of taking in another function as props, it takes in another component. Higher order components combine the functionality of higher order functions and patterns in which functions return other functions. The baseline functionality is the same as a higher order function, but it's more involved because they are components.
+
+
+- [ ] What are three different ways to style components in React? Explain some of the benefits of each. 
+
+Styled Components: This is a way to style components using the styled-components library in React. It allows you to write your CSS in Javascript by using styled components that are called within the individual components instead of having separate files. It allows you to name your JSX tags custom variable names, which can be convenient for organization. Example: const HeaderDiv = styled.div` height: 50px `; 
+
+CSS (or Sass): You can link CSS or SCSS files to your React components. This allows you to write your styles like you normally would and keep everything separated out.
+
+Inline styles: This is a way to write styles directly on the component. It's biggest benefit would likely be to have the style immediately where you are working.
+
 
 ## Project Setup
 
